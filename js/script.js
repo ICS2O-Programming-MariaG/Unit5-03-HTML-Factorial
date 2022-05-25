@@ -7,5 +7,18 @@
 "use strict"
 
 function numSent() {
+  //initializing variables
+  let counter = 1;
+  let facAnswer = 1;
+  
+  //getting user input for the variable userNum
   let userNum = parseInt(document.getElementById("number").value);
+
+  do {
+    facAnswer = facAnswer * counter;
+    counter = counter + 1;
+  } while (counter <= userNum);
+
+  //display factorial back to screen
+  document.getElementById("results").innerHTML = "The factorial of your inputted number (!" + userNum + ") = " + facAnswer + ".";
 }
