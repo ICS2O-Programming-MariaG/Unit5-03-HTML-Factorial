@@ -18,6 +18,18 @@
     <title>Factorials - Maria Goemans</title>
   </head>
   <body>
+    <!-- Link to JS file -->
+    <script src="./js/script.js"></script>
     <h1>Calculating the Factorial of a Whole Number</h1>
+    <h3>Welcome!</h3>
+    <p>Welcome to the best factorial web page! Please input a number below, and we will calculate and display the number's factorial to you using a DO... WHILE loop.</p>
+    <h3>Your Input</h3>
+    <form action="javascript:numSent()">
+      <label for="number">Enter a whole number:</label>
+        <input type="number" step="1" min="0" id="number" placeholder="A whole number..."><br><br>
+        <input type="submit" value="Calculate Factorial" id="styled-button">
+    </form>
+    <!-- Div for factorial to be displayed -->
+    <div id="results"></div>
   </body>
 </html>
