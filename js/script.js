@@ -14,6 +14,7 @@ function numSent() {
   //getting user input for the variable userNum
   let userNum = parseInt(document.getElementById("number").value);
 
+  //using a do... while loop to find factorial
   do {
     facAnswer = facAnswer * counter;
     counter = counter + 1;
